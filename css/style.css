@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.debug{
+  border: 2px solid red;
+}
+
+ul > li{
+  list-style: none;
+}
+
+li > a{
+  text-decoration: none;
+}
+
+:root{
+  --primary_color: #333333;
+}
+
+
+
+/* header style */
+.top_menu_area{
+  background-color: #f6f6f6;
+
+}
+.country_money_sf{
+  color: #707070;
+  font-size: 14px;
+}
+
+.country_money_sf:hover{
+  color: #707070;
+  font-size: 14px;
+}
+
+.country_money:hover{
+  color: #00bfc5;
+}
+
+.active_currency{
+  color: #00bfc5 !important;
+} 
+
+.top_menu{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.icons_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons_area i{
+  font-size: 22px;
+  margin-right: 35px;
+  color: #292929;
+  cursor: pointer;
+}
+
+.icons_area i:hover{
+  color: #00bfc5;
+}
+
+.bag_icon{
+  position: relative;
+}
+
+.cart_item{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: #00bfc5;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.icon_min_menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_min_menu i{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c6c5c5
+}
+
+.icon_bar{
+  position: relative;
+}
+
+.icon_bar_menu{
+  background-color: whitesmoke;
+  width: 250px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.icon_bar:hover .icon_bar_menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+.icon_bar:hover .icon_min_menu i{
+  color: #00bfc5;
+}
+
+.icon_bar_menuItems li{
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+.mini_menu_hr{
+  border: 1px solid grey;
+}
+
+.my_account{
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 10px;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.icon_bar_menuItems li a{
+  color: #707070 !important;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
