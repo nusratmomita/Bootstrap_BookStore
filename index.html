@@ -20,11 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 
     <title>BookStore</title>
 </head>
 <body class="lato-regular">
-    <header>
+    <header id="desktop_menu">
         <!-- header top part starts-->
         <nav class="header_top_part">
             <div class="top_menu_area">
@@ -88,22 +89,123 @@
         <!-- header top part ends-->
 
         <!-- header bottom starts -->
-        <!-- header bottom ends -->
         <nav class="header_bottom_part">
             <ul class="d-flex flex-row justify-content-center gap-5 main_menu">
-                <li><a href="#">Home</a>
-                    <i class="fa-solid fa-angle-down down_arrow"></i>
+                <li class="home_menu_parent">
+                    <a href="#">Home
+                        <i class="fa-solid fa-angle-down down_arrow"></i>
+                    </a>
+                    <ul class="home_diff_styles">
+                        <li><a href="#">Home - 1</a></li>
+                        <li><a href="#">Home - 2</a></li>
+                        <li><a href="#">Home - 3</a></li>
+                        <li><a href="#">Home - 4</a></li>
+                        <li><a href="#">Home - 5</a></li>
+                        <li><a href="#">Home - 6</a></li>
+                    </ul>
                 </li>
-                <li><a href="#">Shop</a>
-                    <i class="fa-solid fa-angle-down down_arrow"></i>
+                <li class="shop_menu_parent"><a href="#">Shop
+                    <i class="fa-solid fa-angle-down down_arrow"></i></a>
+                    <ul class="shop_diff_styles">
+                        <li><a href="#">Shop 1</a></li>
+                        <li><a href="#">Shop 2</a></li>
+                        <li><a href="#">Shop 3</a></li>
+                        <li><a href="#">Shop 4</a></li>
+                        <li><a href="#">Shop 5</a></li>
+                        <li><a href="#">Shop 6</a></li>
+                    </ul>
                 </li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <!-- header bottom ends -->
     </header>
-    <main></main>
+
+    <!-- mobile header section -->
+    <div id="mobile_menu">
+        <div class="d-flex justify-content-between align-items-center">
+            <img class="siteLogo" src="./assets/siteLogo.png" alt="siteLogo">
+    
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- banner section starts -->
+        <div class="banner_section">
+            <div class="swiper banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide banner_slider_1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!-- left side text -->
+                                    <div class="banner_text">
+                                        <h3>NEW ARRIVALS</h3>
+                                        <h2>Led Desk Brand</h2>
+                                        <p>Next generation LED lamp. A multi-function LED lamp that is environmentally friendly and soft on the eyes.</p>
+                                        <a href="#">
+                                            <button class="btn_primary_style">Shop Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner_slider_2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!-- left side text -->
+                                    <div class="banner_text">
+                                        <h3>NEW ARRIVALS</h3>
+                                        <h2>Super Desk Lamp</h2>
+                                        <p>Next generation LED lamp. A multi-function LED lamp that is environmentally friendly and soft on the eyes.</p>
+                                        <a href="#">
+                                            <button class="btn_primary_style">Shop Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide banner_slider_3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!-- right side text -->
+                                    <div class="banner_text_3">
+                                        <h3>NEW ARRIVALS</h3>
+                                        <h2>Desk Lamp Brand</h2>
+                                        <p>Next generation LED lamp. A multi-function LED lamp that is environmentally friendly and soft on the eyes.</p>
+                                        <a href="#">
+                                            <button class="btn_primary_style">Shop Now</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- swiper navigation -->
+                <div class="swiper_pagination"></div>
+
+                <div class="banner_swiper_nav">
+                    <button class="swiper-btn-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button class="swiper-btn-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- banner section ends -->
+    </main>
     <footer></footer>
 
     <!-- js for bootstrap -->

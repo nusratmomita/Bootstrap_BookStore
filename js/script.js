@@ -22,4 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     })
 });
+
+
+
+
+var swiper = new Swiper(".banner_swiper", {
+  spaceBetween: 50,
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+        nextEl: '.swiper-btn-next',
+        prevEl: '.swiper-btn-prev',
+    },
+  pagination: {
+    el: '.swiper_pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+
+});
  
