@@ -35,6 +35,14 @@
     margin-top: -10px;
   }
 
+  /* testimonial */
+  .testimonial_text{
+    width: 100%;
+  }
+
+  .testimonial_swiper_nav{
+    display: none;
+  }
 
  }
 

@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+// banner swiper
 var swiper = new Swiper(".banner_swiper", {
   spaceBetween: 50,
   slidesPerView: 1,
@@ -44,4 +44,16 @@ var swiper = new Swiper(".banner_swiper", {
   },
 
 });
+
+// testimonial swiper
+var swiper = new Swiper(".testimonial_swiper", {
+  spaceBetween: 50,
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonial-swiper-btn-next',
+    prevEl: '.testimonial-swiper-btn-prev',
+  },
+});
+ 
  
