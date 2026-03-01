@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .lato-regular {
   font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -34,6 +41,10 @@ li > a{
 .btn_primary_style:hover{
   background-color: var(--primary_color);
   color: white;
+}
+
+a{
+  text-decoration: none;
 }
 
 :root{
@@ -253,6 +264,7 @@ li > a{
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  height: 665px;
 }
 
 .banner_slider_3{
@@ -360,54 +372,57 @@ li > a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 575.98px) {
-  #desktop_menu{
-    display: none;
-  }
-
-  #mobile_menu{
-    display: block;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .siteLogo{
-    width: 20%;
-  }
+/* book collection style */
+.book_collection_section{
+  margin-top: 120px;
 }
 
+.book_img{
+  width: 100%;
+}
+
+.book_collection_1,.book_collection_2,.book_collection_3{
+  position: relative;
+  cursor: pointer;
+}
+
+.book_collection_1:hover,.book_collection_2:hover,.book_collection_3:hover{
+  opacity: 0.9;
+}
+
+.book_name{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  background: #fff;
+  padding: 12px;
+  padding-top: 18px;
+  outline: 1px solid #fff;
+  outline-offset: 6px;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+.book_name h3{
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 18px;
+  color: #292929;
+}
+
+.book_name h4{
+  font-size: 16px;
+  line-height: 1;
+  display: inline-block;
+  color: #707070;
+}
+
+.book_name h4:hover{
+  color: #00bfc5;
+}
+
+
+/* our products style */
+.our_products_section{
+  margin-top: 120px;
+}
