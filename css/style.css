@@ -47,6 +47,20 @@ a{
   text-decoration: none;
 }
 
+.section_title{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section_subtitle{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
 :root{
   --primary_color: #333333;
 }
@@ -146,6 +160,7 @@ a{
   opacity: 0;
   visibility: hidden;
   transition: 0.3s ease;
+  z-index: 999;
 }
 
 .icon_bar:hover .icon_bar_menu{
@@ -461,6 +476,7 @@ a{
 .testimonial_section{
   margin-top: 120px;
   background: url(../assets/Testimonial-BG.png) no-repeat center center;
+  background-size: cover;
   position: relative;
 }
 
@@ -514,3 +530,118 @@ a{
   opacity: 1;
   visibility: visible;
 }
+
+/* featuredBook_collection */
+.featuredBook_collection{
+  margin-top: 120px;
+}
+
+.first_row_images{
+  margin-top: 60px;
+}
+
+.book_feature{
+  border: 1px solid #eee;
+  transition: all 400ms ease-in-out;
+}
+
+.featuredBook_img {
+  position: relative;
+  cursor: pointer;
+}
+
+.featuredBook_img img {
+  transition: opacity 400ms ease;
+}
+
+.hover_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.book_feature:hover .default_img {
+  opacity: 0;
+}
+
+.book_feature:hover .hover_img, .book_feature:hover .hovered_icons{
+  opacity: 1;
+}
+
+.book_details{
+  padding: 15px 10px;
+}
+
+.book_vendor_stars h4{
+  font-weight: 400;
+  line-height: 12px;
+  color: #929292;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.stars i{
+  color: #FBCD0B;
+  cursor: pointer;
+}
+
+.book_dummy_name{
+  font-size: 14px;
+  color: #292929;
+  font-weight: 500;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.book_dummy_name:hover{
+  color: #00bfc5;
+}
+
+.book_details .price{
+  color: #00bfc5;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-right: 10px;
+}
+
+.hovered_icons{
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 250px;
+  max-width: 100%;
+  padding: 5px 25px;
+  transition: .3s;
+  transform: translate(-50%);
+  background: #fff;
+  box-shadow: 1px 1px 1px #0000001a;
+}
+
+.hovered_icons i:hover{
+  color: #00bfc5;
+}
+
+.hovered_icon_hr{
+  border: 1px solid #9e9e9e;
+  height: 25px;
+}
+
+.second_row_images{
+  margin-top: 30px;
+}
+
+.days, .hours, .mins,.secs{
+  background-color: var(--primary_color);
+  color: white;
+  padding: 7px;
+  margin-right: 5px;
+  font-size: 14px;
+  width: 25%;
+} 
