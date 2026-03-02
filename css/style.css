@@ -13,7 +13,6 @@
   font-style: normal;
 }
 
-
 .debug{
   border: 2px solid red;
 }
@@ -598,7 +597,7 @@ a{
   color: #00bfc5;
 }
 
-.book_details .price{
+.book_details .price,.prev_price{
   color: #00bfc5;
   font-size: 16px;
   font-weight: 700;
@@ -637,11 +636,62 @@ a{
   margin-top: 30px;
 }
 
+.time_line{
+  width: 100%;
+  padding: 0 4px;
+  position: absolute;
+  bottom: 35px;
+}
+
 .days, .hours, .mins,.secs{
   background-color: var(--primary_color);
   color: white;
-  padding: 7px;
-  margin-right: 5px;
-  font-size: 14px;
   width: 25%;
+  padding: 7px 0;
 } 
+
+.days h4, .hours h4, .mins h4,.secs h4{
+  font-size: 18px;
+}
+
+.book_feature:hover .time_line{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.discount_price_per{
+  background-color: var(--primary_color);
+  color: white;
+  width: 20%;
+  border-radius: 20px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  text-align: center;
+  border: none;
+}
+
+.discount_price_per h4{
+  font-weight: normal;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.prev_price{
+  text-decoration: line-through;
+  color: #929292;
+}
+
+.view_more_pro_btn{
+  margin-top: 40px;
+}
+
+/* random section style */
+.random_section{
+  margin-top: 120px;
+}
+
+/* book list section style */
+.book_list_section{
+  margin-top: 120px;
+}
