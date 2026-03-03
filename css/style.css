@@ -767,7 +767,7 @@ a{
 }
 
 .book_list_book:hover{
-  border: 1px solid #00bfc5;
+  border: 1px solid #00bfc5 !important;
 }
 
 .book_list_bookImg{
@@ -803,8 +803,13 @@ a{
   color: #00bfc5;
 }
 
-.book_list_price{
+.book_list_price,.book_list_prev_price{
   color: #00bfc5;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.book_list_prev_price{
+  text-decoration: line-through;
+  color: #929292;
 }
