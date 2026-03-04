@@ -245,17 +245,601 @@
         <!-- books collection section ends -->
 
         <!-- our products section starts -->
-        <section class="our_products_section display">
+        <section class="our_products_section">
             <div class="container">
                 <h3 class="poppins-regular section_title">Our Products</h3>
                 <p class="section_subtitle">Mirum est notare quam littera gothica, quam nunc putamus parum 
                     claram anteposuerit litterarum formas.</p>
                 <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <a class="tab_btns" href="#">Adventure</a>
-                        <a class="tab_btns" href="#">Biography</a>
-                        <a class="tab_btns" href="#">Children</a>
-                        <a class="tab_btns" href="#">Food</a>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="bookLists(event, 0)" class="tab_btns tablinks">Adventure</button>
+                        <button onclick="bookLists(event, 1)" class="tab_btns tablinks">Biography</button>
+                        <button onclick="bookLists(event, 2)" class="tab_btns tablinks">Children</button>
+                        <button onclick="bookLists(event, 3)" class="tab_btns tablinks">Food</button>
+                    </div>
+
+                    <div id="adventure" class="tabContent">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_1.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_1.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 9</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_2.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_2.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 6</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_3.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_3.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 7</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_4.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_4.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 8</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="biography" class="tabContent">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_5.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_5.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 9</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_6.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_6.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 6</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_3.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_7.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 7</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_1.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_1.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 8</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="children" class="tabContent">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_1.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_1.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 9</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_2.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_2.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 6</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_3.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_3.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 7</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_4.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_4.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 8</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="food" class="tabContent">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_5.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_5.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 9</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_6.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_6.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 6</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_1.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_7.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 7</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="book_feature">
+                                    <div class="featuredBook_img">
+                                        <img class="img-fluid default_img" src="./assets/book_img_2.png" alt="book image">
+                                        <img class="img-fluid hover_img" src="./assets/hovered_book_img_2.png" alt="hovered book image">
+                                        <div class="hovered_icons">
+                                            <i class="fa-solid fa-bag-shopping"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-heart"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <hr class="hovered_icon_hr">
+                                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        </div>
+                                    </div>
+                                    <hr class="book_detail_hr">
+                                    <div class="book_details">
+                                        <div class="book_vendor_stars d-flex justify-content-between align-items-center">
+                                            <h4>Vendor 8</h4>
+                                            <div class="stars">
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <h4 class="book_dummy_name poppins-regular">Dummy product name</h4>
+                                        <div class="prices d-flex align-items-center">
+                                            <h4 class="price">£28.56</h4>
+                                            <h4 class="prev_price">£44.47</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

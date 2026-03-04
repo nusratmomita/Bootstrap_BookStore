@@ -467,9 +467,33 @@ a{
   color: #707070;
   border-radius: 3px;
   background: #f1f1f1;
+  border: none;
+  margin-bottom: 30px;
 }
 
+.tabContent {
+  display: none;
+}
 
+.tab_btns.active {
+  color: #fff;
+  border: none;
+  background: #292929;
+}
+
+.tab_btns.active::after{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  width: 14px;
+  margin: auto;
+  content: "";
+  border-top: 5px solid var(--primary_color);
+  border-right: 7px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid transparent;
+}
 
 /* testimonial style */
 .testimonial_section{

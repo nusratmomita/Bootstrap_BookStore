@@ -33,7 +33,7 @@ var swiper = new Swiper(".banner_swiper", {
   navigation: {
         nextEl: '.swiper-btn-next',
         prevEl: '.swiper-btn-prev',
-    },
+  },
   pagination: {
     el: '.swiper_pagination',
     clickable: true,
@@ -45,6 +45,36 @@ var swiper = new Swiper(".banner_swiper", {
 
 });
 
+// our products tab
+function bookLists(event, index) {
+
+    var tabContents = document.getElementsByClassName("tabContent");
+    var tabLinks = document.getElementsByClassName("tablinks");
+
+    // Hide all tab contents
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+    }
+
+    // Remove active class from all buttons
+    for (let i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+    }
+
+    // Show selected tab
+    tabContents[index].style.display = "block";
+
+    // Add active class to clicked button
+    event.currentTarget.classList.add("active");
+
+  };
+
+// show adventure tab by default  
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementsByClassName("tablinks")[0].click();
+});
+
+
 // testimonial swiper
 var swiper = new Swiper(".testimonial_swiper", {
   spaceBetween: 50,
@@ -55,6 +85,8 @@ var swiper = new Swiper(".testimonial_swiper", {
     prevEl: '.testimonial-swiper-btn-prev',
   },
 });
+
+
 
 // blog swiper
 var swiper = new Swiper(".blog_swiper", {
