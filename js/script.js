@@ -55,5 +55,23 @@ var swiper = new Swiper(".testimonial_swiper", {
     prevEl: '.testimonial-swiper-btn-prev',
   },
 });
+
+// blog swiper
+var swiper = new Swiper(".blog_swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop:true,
+  breakpoints: {
+      0: {
+          slidesPerView: 1
+      },
+      768: {
+          slidesPerView: 2
+      },
+      992: {
+          slidesPerView: 3
+      }
+  }
+});
  
  
