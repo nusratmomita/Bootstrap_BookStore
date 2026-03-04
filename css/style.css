@@ -934,6 +934,10 @@ a{
 }
 
 /* newsletter style */
+.newsletter_section{
+  margin-top: 120px;
+}
+
 .form_div{
   display: flex;
   justify-content: center;
@@ -971,5 +975,76 @@ form input{
 }
 
 .newsletter_btn:hover{
+  color: #00bfc5;
+}
+
+/* footer style */
+.footer_section{
+  background-color: #f4f4f4;
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer_section .footer_description,.address,.email,.phone{
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #707070;
+}
+
+.footer_description{
+  width: 90%;
+}
+
+.footer_timing_menu{
+  margin-left: 30px;
+} 
+
+.footer_section .timing,.footer_menu,.footer_extra_menu{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 20px;
+  color: #292929;
+}
+
+.footer_section .timing{
+  margin-bottom: 25px;
+}
+
+.timing_days,.time,.closed{
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #707070;
+}
+
+.footer_menu_items{
+  padding-left: 0;
+}
+
+.footer_menu_items li a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #707070;
+}
+
+.footer_menu_items li {
+  margin-bottom: 15px;
+}
+
+.footer_menu_items li a:hover{
+  color: #00bfc5;
+}
+
+.social_media_icons i{
+  font-size: 20px;
+  color: #707070;
+  cursor: pointer;
+}
+
+.social_media_icons i:hover{
   color: #00bfc5;
 }
