@@ -94,16 +94,19 @@ var swiper = new Swiper(".blog_swiper", {
   spaceBetween: 30,
   loop:true,
   breakpoints: {
-      0: {
-          slidesPerView: 1
-      },
-      768: {
-          slidesPerView: 2
-      },
-      992: {
-          slidesPerView: 3
-      }
+    0: {
+        slidesPerView: 1
+    },
+    768: {
+        slidesPerView: 2
+    },
+    992: {
+        slidesPerView: 3
+    }
   }
 });
+
+// mobile navbar
+
  
  
