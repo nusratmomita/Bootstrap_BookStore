@@ -4,25 +4,47 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdownToggle = document.getElementById("currencyDropdown");
 
     currencyItems.forEach(function(item){
-        item.addEventListener("click" , function(e){
-            e.preventDefault();
+      item.addEventListener("click" , function(e){
+        e.preventDefault();
 
-            currencyItems.forEach(function(ele){
-                ele.classList.remove("active_currency");
-            })
-
-            this.classList.add('active_currency')
-
-            const selectedItem = this.textContent.split(" - ")[0];
-            // console.log(selectedItem)
-
-            dropdownToggle.textContent = selectedItem;
-
-            // console.log(dropdownToggle)
+        currencyItems.forEach(function(ele){
+          ele.classList.remove("active_currency");
         })
+
+        this.classList.add('active_currency')
+
+        const selectedItem = this.textContent.split(" - ")[0];
+        // console.log(selectedItem)
+
+        dropdownToggle.textContent = selectedItem;
+        // console.log(dropdownToggle)
+      })
     })
 });
 
+// top menu dropdown for mobile dropdown
+document.addEventListener("DOMContentLoaded", function() {
+    const currencyItems = document.querySelectorAll(".country_money");
+    const dropdownToggle = document.getElementById("currencyDropdown2");
+
+    currencyItems.forEach(function(item){
+      item.addEventListener("click" , function(e){
+        e.preventDefault();
+
+        currencyItems.forEach(function(ele){
+          ele.classList.remove("active_currency");
+        })
+
+        this.classList.add('active_currency')
+
+        const selectedItem = this.textContent.split(" - ")[0];
+        // console.log(selectedItem)
+
+        dropdownToggle.textContent = selectedItem;
+        // console.log(dropdownToggle)
+      })
+    })
+});
 
 // banner swiper
 var swiper = new Swiper(".banner_swiper", {
@@ -115,6 +137,66 @@ var swiper = new Swiper(".blog_swiper", {
 });
 
 // mobile navbar
+const sidebar = document.querySelector(".mobile_menu_sidebar");
+const hamburger = document.getElementById("hamburger");
+const closeBtn = document.getElementById("close_btn");
 
+// console.log(sidebar,closeBtn)
+hamburger.addEventListener("click", function(){
+  sidebar.classList.add("active");
+})
+
+closeBtn.addEventListener("click", function(){
+  sidebar.classList.remove("active");
+})
  
- 
+
+
+// mobile home menu dropdown
+const mobileHomeMenu = document.querySelector(".mobile_home_diff_styles");
+const plusIcon = document.querySelector(".plus_icon");
+const minusIcon = document.querySelector(".minus_icon");
+const mobileShopMenu = document.querySelector(".mobile_shop_diff_styles");
+
+const shopPlus = document.querySelector(".mobile_shop_menu_parent .plus_icon");
+const shopMinus = document.querySelector(".mobile_shop_menu_parent .minus_icon");
+
+const mobileAccountMenu = document.querySelector(".mobile_my_account_menu");
+const myAccountPlus = document.querySelector(".mobile_my_account_menu_parent .plus_icon");
+const myAccountMinus = document.querySelector(".mobile_my_account_menu_parent .minus_icon");
+
+plusIcon.addEventListener("click", function(){
+  mobileHomeMenu.classList.add("showDropdown");
+  minusIcon.style.display = "block";
+  plusIcon.style.display = "none";
+});
+
+minusIcon.addEventListener("click", function(){
+  mobileHomeMenu.classList.remove("showDropdown");
+  minusIcon.style.display = "none";
+  plusIcon.style.display = "block";
+});
+
+shopPlus.addEventListener("click", function(){
+  mobileShopMenu.classList.add("showDropdown");
+  shopMinus.style.display = "block";
+  shopPlus.style.display = "none";
+});
+
+shopMinus.addEventListener("click", function(){
+  mobileShopMenu.classList.remove("showDropdown");
+  shopMinus.style.display = "none";
+  shopPlus.style.display = "block";
+});
+
+myAccountPlus.addEventListener("click", function(){
+  mobileAccountMenu.classList.add("showDropdown");
+  myAccountMinus.style.display = "block";
+  myAccountPlus.style.display = "none";
+});
+
+myAccountMinus.addEventListener("click", function(){
+  mobileAccountMenu.classList.remove("showDropdown");
+  myAccountMinus.style.display = "none";
+  myAccountPlus.style.display = "block";
+});

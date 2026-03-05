@@ -127,10 +127,96 @@
 
     <!-- mobile header section -->
     <div id="mobile_menu">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="mobile_top d-flex justify-content-between align-items-center">
             <img class="siteLogo" src="./assets/siteLogo.png" alt="siteLogo">
+            
+            <div class="d-flex gap-3">
+                <div class="money_dropdown">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle country_money_sf " 
+                            href="#"
+                            id="currencyDropdown2"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            USD
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">USD - US Dollar</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">EUR - Euro</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">GBP - British Pound</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">INR - Indian Rupee</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">BDT - Bangladesh Taka</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">JPY - Japan Yen</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">CAD - Canada Dollar</a></li>
+                            <li><a class="dropdown-item country_money bg-transparent" href="#">AUD - Australian Dollar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <i class="fa-solid fa-bag-shopping bag_icon">
+                    <span class="cart_item lato-regular">0</span>
+                </i>
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+
+        <div class="mobile_menu_sidebar">
+            <div class="mobile_close_btn">
+                <button>
+                    <i id="close_btn" class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
     
-            <i class="fa-solid fa-bars"></i>
+            <ul class="mobile_menu_list">
+                <li class="mobile_home_menu_parent">
+                    <a class="d-flex justify-content-between align-items-center" href="#">Home
+                        <i class="fa-solid fa-plus plus_icon"></i>
+                        <i class="fa-solid fa-minus minus_icon"></i>
+                    </a>
+                    <ul class="mobile_home_diff_styles">
+                        <li><a href="#">Home - 1</a></li>
+                        <li><a href="#">Home - 2</a></li>
+                        <li><a href="#">Home - 3</a></li>
+                        <li><a href="#">Home - 4</a></li>
+                        <li><a href="#">Home - 5</a></li>
+                        <li><a href="#">Home - 6</a></li>
+                    </ul>
+                </li>
+                <li class="mobile_shop_menu_parent">
+                    <a class="d-flex justify-content-between align-items-center" href="#">Shop
+                        <i class="fa-solid fa-plus plus_icon"></i>
+                        <i class="fa-solid fa-minus minus_icon"></i>
+                    </a>
+                    <ul class="mobile_shop_diff_styles">
+                        <li><a href="#">Shop 1</a></li>
+                        <li><a href="#">Shop 2</a></li>
+                        <li><a href="#">Shop 3</a></li>
+                        <li><a href="#">Shop 4</a></li>
+                        <li><a href="#">Shop 5</a></li>
+                        <li><a href="#">Shop 6</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="mobile_my_account">
+                <li class="mobile_my_account_menu_parent">
+                    <a class="d-flex justify-content-between align-items-center" href="#">My Account
+                        <i class="fa-solid fa-plus plus_icon"></i>
+                        <i class="fa-solid fa-minus minus_icon"></i>
+                    </a>
+                    
+                    <ul class="mobile_my_account_menu">
+                        <li>Login</li>
+                        <li>Create Account</li>
+                    </ul>
+                </li>
+                
+            </ul>
         </div>
     </div>
 
@@ -1174,7 +1260,7 @@
         <!-- our products section ends -->
 
         <!-- testimonial section starts -->
-        <section class="testimonial_section">
+        <section class="testimonial_section display_hide">
             <div class="container-fluid">
                 <div class="swiper testimonial_swiper">
                     <div class="swiper-wrapper">
@@ -1225,7 +1311,7 @@
         <!-- testimonial section ends -->
 
         <!-- featured collection section starts-->
-        <section class="featuredBook_collection">
+        <section class="featuredBook_collection display_hide">
             <h3 class="section_title">Featured Collection</h3>
             <p class="section_subtitle">Mirum est notare quam littera gothica, 
                 quam nunc putamus parum claram anteposuerit litterarum formas.</p>
@@ -1528,7 +1614,7 @@
         <!-- featured collection section ends-->
 
         <!-- random sectoin starts-->
-        <section class="random_section">
+        <section class="random_section display_hide">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
@@ -1548,7 +1634,7 @@
         <!-- random sectoin ends-->
 
         <!-- book list section starts -->
-        <section class="book_list_section">
+        <section class="book_list_section display_hide">
             <div class="container p-0">
                 <div class="book_list_names d-flex">
                     <h4 class="special">Special</h4>
@@ -1655,7 +1741,7 @@
         <!-- book list section ends -->
 
         <!-- feature section starts -->
-        <section class="feature_section">
+        <section class="feature_section display_hide">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -1684,12 +1770,12 @@
         </section>
         <!-- feature section ends -->
 
-        <div class="container p-0">
+        <div class="container p-0 display_hide">
             <hr class="divider">
         </div>
 
         <!-- blog section starts -->
-        <section class="blog_section">
+        <section class="blog_section display_hide">
             <h3 class="section_title">Latest Blog</h3>
             <p class="section_subtitle">Littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas.</p>
             <div class="container">
@@ -1793,12 +1879,12 @@
         </section>
         <!-- blog section ends -->
 
-        <div class="container p-0">
+        <div class="container p-0 display_hide">
             <hr class="divider">
         </div>
 
         <!-- newsletter section starts -->
-        <section class="newsletter_section">
+        <section class="newsletter_section display_hide">
             <h4 class="section_subtitle">Special Ofers For Subscribers</h4>
             <h2 class="section_title">Ten Percent Member Discount</h2>
             <h4 class="section_subtitle">Subscribe to our newsletters now and stay up to date with new collections.</h4>
@@ -1813,7 +1899,7 @@
     </main>
 
 
-    <footer>
+    <footer class="display_hide">
         <div class="footer_section">
             <div class="container">
                 <div class="row">
