@@ -497,6 +497,46 @@ a{
   border-left: 7px solid transparent;
 }
 
+.our_products_tab_content{
+  position: relative;
+}
+
+.product-swiper-btn-next,.product-swiper-btn-prev{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #9e9e9e;
+  border: 3px solid #e1e1e1;
+  background: #f7f7f9;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.product-swiper-btn-next{
+  left: 10px;
+}
+
+.product-swiper-btn-prev{
+  right: 10px;
+}
+
+.product-swiper-btn-next:hover ,.product-swiper-btn-prev:hover{
+  color: #f7f7f9;
+  background: var(--primary_color);
+  border: none;
+}
+
+.our_products_tab_content:hover .product-swiper-btn-next,.our_products_tab_content:hover .product-swiper-btn-prev{
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* testimonial style */
 .testimonial_section{
   margin-top: 120px;

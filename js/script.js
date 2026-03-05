@@ -24,15 +24,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 // banner swiper
 var swiper = new Swiper(".banner_swiper", {
   spaceBetween: 50,
   slidesPerView: 1,
   loop: true,
   navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
+    nextEl: '.swiper-btn-prev',
+    prevEl: '.swiper-btn-next',
   },
   pagination: {
     el: '.swiper_pagination',
@@ -45,29 +44,38 @@ var swiper = new Swiper(".banner_swiper", {
 
 });
 
+var swiper = new Swiper(".our_product_swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: false,
+
+  navigation: {
+    nextEl: ".product-swiper-btn-prev",
+    prevEl: ".product-swiper-btn-next"
+  }
+});
+
 // our products tab
 function bookLists(event, index) {
+  var tabContents = document.getElementsByClassName("tabContent");
+  var tabLinks = document.getElementsByClassName("tablinks");
 
-    var tabContents = document.getElementsByClassName("tabContent");
-    var tabLinks = document.getElementsByClassName("tablinks");
+  // Hide all tab contents
+  for (let i = 0; i < tabContents.length; i++) {
+      tabContents[i].style.display = "none";
+  }
 
-    // Hide all tab contents
-    for (let i = 0; i < tabContents.length; i++) {
-        tabContents[i].style.display = "none";
-    }
+  // Remove active class from all buttons
+  for (let i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].classList.remove("active");
+  }
 
-    // Remove active class from all buttons
-    for (let i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove("active");
-    }
+  // Show selected tab
+  tabContents[index].style.display = "block";
 
-    // Show selected tab
-    tabContents[index].style.display = "block";
-
-    // Add active class to clicked button
-    event.currentTarget.classList.add("active");
-
-  };
+  // Add active class to clicked button
+  event.currentTarget.classList.add("active");
+};
 
 // show adventure tab by default  
 document.addEventListener("DOMContentLoaded", function () {
@@ -81,8 +89,8 @@ var swiper = new Swiper(".testimonial_swiper", {
   slidesPerView: 1,
   loop: true,
   navigation: {
-    nextEl: '.testimonial-swiper-btn-next',
-    prevEl: '.testimonial-swiper-btn-prev',
+    nextEl: '.testimonial-swiper-btn-prev',
+    prevEl: '.testimonial-swiper-btn-next',
   },
 });
 
