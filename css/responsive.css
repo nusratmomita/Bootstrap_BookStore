@@ -190,6 +190,13 @@
     margin: 0 10px;
   }
 
+
+
+  /* book list */
+  .book_list_section{
+    margin: 0 10px;
+    margin-top: 120px;
+  }
 }
 
 
@@ -361,6 +368,13 @@
 
   .first_row_images,.second_row_images{
     margin: 0 10px;
+  }
+
+
+  /* book list */
+  .book_list_section{
+    margin: 0 10px;
+    margin-top: 120px;
   }
 
 

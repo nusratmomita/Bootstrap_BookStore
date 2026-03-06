@@ -782,9 +782,8 @@ a{
 .special,.latest,.top {
   font-size: 30px;
   line-height: 40px;
-  display: inline-block;
-  padding-right: 20px;
-  width: 33%;
+  display: block;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -792,8 +791,8 @@ a{
   content: "";
   position: absolute;
   top: 55%;
-  left: 110px;
-  width: 65%;
+  left: 105px;
+  width: 75%;
   height: 1px;
   background: #f0f0f0;
 }
@@ -803,7 +802,7 @@ a{
   position: absolute;
   top: 55%;
   left: 105px;
-  width: 67%;
+  width: 74%;
   height: 1px;
   background: #f0f0f0;
 }
@@ -818,20 +817,18 @@ a{
   background: #f0f0f0;
 }
 
-.book_lists{
-  margin-top: 20px;
-}
-
 .book_list_book{
   border: 1px solid #eeeeee;
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
   transition: all 400ms ease;
+  /* border-radius: 20px; */
 }
 
 .book_list_book:hover{
   border: 1px solid #00bfc5 !important;
+  /* border-radius: 20px; */
 }
 
 .book_list_bookImg{

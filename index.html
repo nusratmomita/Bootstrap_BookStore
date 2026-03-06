@@ -1617,13 +1617,13 @@
         <section class="random_section">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12 mb-20">
                         <a href="#">
                             <img class="img-fluid w-100" src="./assets/random_img_1.png" alt="">
                         </a>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                         <a href="#">
                             <img class="img-fluid w-100" src="./assets/random_img_2.png" alt="">
                         </a>
@@ -1636,101 +1636,113 @@
         <!-- book list section starts -->
         <section class="book_list_section">
             <div class="container p-0">
-                <div class="book_list_names d-flex">
-                    <h4 class="special">Special</h4>
-                    <h4 class="latest">Latest</h4>
-                    <h4 class="top">Top</h4>
-                </div>
-                <div class="row g-4 book_lists">
-                    <!-- book list - 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_3.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 1</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <h4 class="book_list_price">£18.56</h4>
-                            </div>
-                        </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/hovered_book_img_3.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 2</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <div class="d-flex gap-2">
-                                    <h4 class="book_list_price">£34.66</h4>
-                                    <h4 class="book_list_prev_price">£18.44</h4>
+                <div class="row">
+                    <!-- special books -->
+                    <div class="special_books col-lg-4">
+                        <h3 class="special">Special</h3>
+                        <div class="special_books_list">
+                            <div class="col-lg-12">
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_3.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 1</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <h4 class="book_list_price">£18.56</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 3</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <div class="d-flex gap-2">
-                                    <h4 class="book_list_price">£8.55</h4>
-                                    <h4 class="book_list_prev_price">£10.00</h4>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/hovered_book_img_3.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 2</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <div class="d-flex gap-2">
+                                            <h4 class="book_list_price">£34.66</h4>
+                                            <h4 class="book_list_prev_price">£18.44</h4>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- book list - 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 4</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <h4 class="book_list_price">£58.56</h4>
-                            </div>
-                        </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/hovered_book_img_3.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 5</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <h4 class="book_list_price">£58.56</h4>
-                            </div>
-                        </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_6.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 6</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <div class="d-flex gap-2">
-                                    <h4 class="book_list_price">£34.66</h4>
-                                    <h4 class="book_list_prev_price">£18.44</h4>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 3</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <div class="d-flex gap-2">
+                                            <h4 class="book_list_price">£8.55</h4>
+                                            <h4 class="book_list_prev_price">£10.00</h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- book list - 3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 7</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <h4 class="book_list_price">£58.56</h4>
+
+                    <!-- Latest books -->
+                    <div class="latest_books col-lg-4">
+                        <h3 class="latest">Latest</h3>
+                        <div class="latest_books_list">
+                            <div class="col-lg-12">
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 4</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <h4 class="book_list_price">£58.56</h4>
+                                    </div>
+                                </div>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/hovered_book_img_3.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 5</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <h4 class="book_list_price">£58.56</h4>
+                                    </div>
+                                </div>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_6.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 6</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <div class="d-flex gap-2">
+                                            <h4 class="book_list_price">£34.66</h4>
+                                            <h4 class="book_list_prev_price">£18.44</h4>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_2.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 8</h4>
-                                <h3 class="poppins-regular">Dummy product name</h3>
-                                <h4 class="book_list_price">£58.56</h4>
-                            </div>
-                        </div>
-                        <div class="book_list_book d-flex align-items-center gap-4">
-                            <img class="img-fluid book_list_bookImg" src="./assets/book_img_3.png" alt="book_img">
-                            <div class="book_list_bookInfo">
-                                <h4 class="vendor_name">Vendor 9</h4>
-                                <h3 class="poppins-regular">Product Name 1</h3>
-                                <div class="d-flex gap-2">
-                                    <h4 class="book_list_price">£34.66</h4>
-                                    <h4 class="book_list_prev_price">£18.44</h4>
+                    </div>
+
+                    <!-- top books -->
+                    <div class="top_books col-lg-4">
+                        <h3 class="top">Top</h3>
+                        <div class="top_books_list">
+                            <div class="col-lg-12">
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_1.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 7</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <h4 class="book_list_price">£58.56</h4>
+                                    </div>
+                                </div>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_2.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 8</h4>
+                                        <h3 class="poppins-regular">Dummy product name</h3>
+                                        <h4 class="book_list_price">£58.56</h4>
+                                    </div>
+                                </div>
+                                <div class="book_list_book d-flex align-items-center gap-4">
+                                    <img class="img-fluid book_list_bookImg" src="./assets/book_img_3.png" alt="book_img">
+                                    <div class="book_list_bookInfo">
+                                        <h4 class="vendor_name">Vendor 9</h4>
+                                        <h3 class="poppins-regular">Product Name 1</h3>
+                                        <div class="d-flex gap-2">
+                                            <h4 class="book_list_price">£34.66</h4>
+                                            <h4 class="book_list_prev_price">£18.44</h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1741,7 +1753,7 @@
         <!-- book list section ends -->
 
         <!-- feature section starts -->
-        <section class="feature_section display_hide">
+        <section class="feature_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
