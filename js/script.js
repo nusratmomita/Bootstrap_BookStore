@@ -200,3 +200,58 @@ myAccountMinus.addEventListener("click", function(){
   myAccountMinus.style.display = "none";
   myAccountPlus.style.display = "block";
 });
+
+
+// sticky header
+window.addEventListener("scroll", () => {
+  const BottomHeader = document.querySelector(".header_bottom_part");
+  const TopHeader = document.querySelector(".header_top_part");
+  
+  if(window.scrollY > 0){
+    BottomHeader.classList.add("sticky");
+    TopHeader.classList.add("display_hide");
+  }
+  else{
+    BottomHeader.classList.remove("sticky");
+    TopHeader.classList.remove("display_hide")
+  }
+})
+
+// pre loader
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    document.getElementById("preloader").style.opacity = "0";
+    document.getElementById("preloader").style.transition = "opacity 0.7s ease";
+    setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+    }, 700);
+}, 3000);
+});
+
+
+// back to top button
+document.addEventListener("DOMContentLoaded", () => {
+
+  const backToTop = document.querySelector(".scroll_up");
+
+  window.addEventListener("scroll", () => {
+
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > 100) {
+      // scrolling up
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+});
