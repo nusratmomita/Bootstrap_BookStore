@@ -222,6 +222,11 @@
     font-size: 30px;
   }
 
+  .newsletter_section .subs_text{
+    padding: 0 4px;
+    margin-top: -10px;
+  }
+
   form input{
     width: 100%;
     margin: 0 12px;
