@@ -1178,19 +1178,21 @@ form input{
 
 .footer_timing_menu{
   margin-left: 30px;
-  /* margin-left: 0px; */
 } 
 
 .footer_section .timing,.footer_menu,.footer_extra_menu{
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 20px;
   color: #292929;
 }
 
 .footer_section .timing{
   margin-bottom: 25px;
+}
+
+.footer_section .footer_menu,.footer_section .footer_extra_menu{
+  margin-bottom: 20px;
 }
 
 .timing_days,.time,.closed{
@@ -1208,6 +1210,8 @@ form input{
   font-weight: normal;
   font-size: 16px;
   color: #707070;
+  border-bottom: 2px solid transparent;
+  transition: all 400ms ease;
 }
 
 .footer_menu_items li {
@@ -1215,6 +1219,7 @@ form input{
 }
 
 .footer_menu_items li a:hover{
+  border-bottom: 2px solid #00bfc5;
   color: #00bfc5;
 }
 
@@ -1226,10 +1231,6 @@ form input{
 
 .social_media_icons i:hover{
   color: #00bfc5;
-}
-
-.footer_menu ,.footer_extra_menu{
-  margin-top: -5px;
 }
 
 .footer_hr{
