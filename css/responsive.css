@@ -243,7 +243,7 @@
 
   .blog_section{
     margin: 0 10px;
-    margin-top: 60px;
+    margin-top: 80px;
   }
 
 
@@ -440,8 +440,15 @@
     margin-top: 100px;
   }
 
+
+
+  /* our products */
+  .our_products_section{
+    margin-top: 60px;
+  }
+
   .our_products_section .section_title{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .book_collection_1,.book_collection_2{
@@ -465,8 +472,12 @@
 
 
   /* featured collection */
+  .featuredBook_collection{
+    margin-top: 60px;
+  }
+
   .featuredBook_collection .section_title{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .first_row_images,.second_row_images{
@@ -480,21 +491,24 @@
     margin-top: 80px;
   }
 
-
   .divider{
     margin-top: 60px;
     margin-bottom: 60px;
   }
 
   .special,.latest,.top {
-    font-size: 20px;
+    font-size: 25px;
   }
 
 
 
   /* blog section */
+  .blog_section{
+    margin-top: 40px;
+  }
+
   .blog_section .section_title{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .blog_section{
@@ -510,7 +524,6 @@
   .newsletter_section .section_title{
     font-size: 20px
   }
-
 
   .form_div{
     display: flex;
@@ -544,6 +557,10 @@
 
 
   /* footer */
+  .footer_section .siteLogo{
+    width: 30% !important;
+  }
+
   .footer_timing_menu{
     margin-left: 0px;
   }
@@ -701,6 +718,7 @@
     margin-top: 100px;
   }
 
+
   .book_collection_1,.book_collection_2{
     margin-bottom: 30px;
   }
@@ -709,8 +727,21 @@
     font-size: 22px;
   }
 
+   /* our products */
+  .our_products_section{
+    margin-top: 60px;
+  }
+
+  .our_products_section .section_title{
+    font-size: 30px;
+  }
+
 
   /* testimonial */
+  .testimonial_section{
+    margin-top: 60px;
+  }
+
   .testimonial_text{
     width: 100%;
   }
@@ -721,8 +752,12 @@
 
 
   /* featured collection */
+  .featuredBook_collection{
+    margin-top: 60px;
+  }
+
   .featuredBook_collection .section_title{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .first_row_images,.second_row_images{
@@ -735,9 +770,24 @@
     margin-bottom: 60px;
   }
 
+  /* random section */
+  .random_section{
+    margin-top: 60px;
+  }
+
+  /* book list */
+  .book_list_section{
+    margin-top: 60px;
+  }
+
+
   /* blog section */
+  .blog_section{
+    margin-top: 60px;
+  }
+
   .blog_section .section_title{
-    font-size: 20px
+    font-size: 30px
   }
 
   .blog_section{
@@ -751,11 +801,15 @@
   }
 
   .newsletter_section .section_title{
-    font-size: 20px
+    font-size: 30px
   }
 
 
   /* footer */
+  .footer_section .siteLogo{
+    width: 25% !important;
+  }
+
   .footer_timing_menu{
     margin-left: 0px;
   }
