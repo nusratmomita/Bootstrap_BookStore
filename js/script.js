@@ -70,7 +70,6 @@ var swiper = new Swiper(".our_product_swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: false,
-
   navigation: {
     nextEl: ".product-swiper-btn-prev",
     prevEl: ".product-swiper-btn-next"
@@ -125,13 +124,13 @@ var swiper = new Swiper(".blog_swiper", {
   loop:true,
   breakpoints: {
     0: {
-        slidesPerView: 1
+      slidesPerView: 1
     },
     768: {
-        slidesPerView: 2
+      slidesPerView: 2
     },
     992: {
-        slidesPerView: 3
+      slidesPerView: 3
     }
   }
 });
