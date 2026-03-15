@@ -323,7 +323,7 @@ a{
 
 .home_menu_parent,.shop_menu_parent{
   position: relative;
-  z-index: 999;
+  z-index: 40;
 }
 
 .home_menu_parent > a,.shop_menu_parent > a{
@@ -937,12 +937,12 @@ a{
   margin: 0;
   margin-bottom: 30px;
   transition: all 400ms ease;
-  /* border-radius: 20px; */
+  border-radius: 20px;
 }
 
 .book_list_book:hover{
   border: 1px solid #00bfc5 !important;
-  /* border-radius: 20px; */
+  border-radius: 20px;
 }
 
 .book_list_bookImg{
@@ -950,6 +950,7 @@ a{
   width: 100%;
   max-height: 133px;
   height: 100%;
+  margin: 10px;
 }
 
 .book_list_bookInfo .vendor_name{
